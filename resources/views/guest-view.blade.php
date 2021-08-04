@@ -14,10 +14,10 @@
                 <th class="table-3">Email</th>
                 <th class="table-4">Address</th>
             </tr>
-            @foreach($guests as $guest)
+            @foreach($guests as $key => $guest)
 
                 <tr class="mb-2">
-                    <td>{{$guest->id}}</td>
+                    <td>{{$key+1}}</td>
                     <td>{{$guest->name}}</td>
                     <td>{{$guest->email}}</td>
                     <td>{{$guest->address}}</td>

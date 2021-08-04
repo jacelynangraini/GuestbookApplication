@@ -18,7 +18,8 @@
             <div class="w-40  h-75 mr-4 mt-auto mb-auto w-100-r mb-4-r mr-0-r">
                 <div class="form-container text-16-m ">
                     {{-- <form class="d-flex flex-column justify-content-around" action="/success" method="POST"> --}}
-                    <form class="d-flex flex-column justify-content-around" action="/success" >
+                    <form class="d-flex flex-column justify-content-around" action="/success" method="POST">
+                        @csrf
                             <div class="form-group">
                             <label for="formGroupExampleInput" class="text-pink">Name</label>
                             <input type="text" class="form-control text-grey" id="formGroupExampleInput" placeholder="Enter your name" name="name">

@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PageController@home');
+Route::post('/success', 'GuestController@insert');
 Route::get('/admin/edit', 'PageController@edit');
 Route::get('/view', 'GuestController@get');
 Route::get('/admin/view', 'GuestController@getAdminView');
+Route::get('/admin/edit/{id}', 'GuestController@updateView');
 Route::post('/admin/edit/{id}', 'GuestController@update');
 Route::post('/admin/delete/{id}', 'GuestController@delete');
 Route::get('/login', 'PageController@login');

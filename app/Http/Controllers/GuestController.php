@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Guest;
 
@@ -21,6 +22,12 @@ class GuestController extends Controller
 
         return view('admin-view', compact('guests'));
 
+    }
+
+    public function updateView($id){
+        $guests = Guest::find($id);
+
+        return view('edit-guest', compact('guests'));
     }
 
     public function update(Request $request, $id){
