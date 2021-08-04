@@ -24,3 +24,7 @@ Route::post('/admin/delete/{id}', 'GuestController@delete');
 Route::get('/login', 'PageController@login');
 Route::get('/register', 'PageController@register');
 Route::get('/success', 'PageController@success');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
