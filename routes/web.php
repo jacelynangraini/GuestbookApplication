@@ -17,6 +17,8 @@ Route::get('/', 'PageController@home');
 Route::get('/admin/edit', 'PageController@edit');
 Route::get('/view', 'GuestController@get');
 Route::get('/admin/view', 'GuestController@getAdminView');
+Route::post('/admin/edit/{id}', 'GuestController@update');
+Route::post('/admin/delete/{id}', 'GuestController@delete');
 Route::get('/login', 'PageController@login');
 Route::get('/register', 'PageController@register');
 Route::get('/success', 'PageController@success');
