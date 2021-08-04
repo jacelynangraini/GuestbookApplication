@@ -15,6 +15,49 @@
                 <th class="table-4 ">Address</th>
                 <th class="table-5 ">Actions</th>
             </tr>
+            @foreach($guests as $guest)
+            <tr class="mb-2">
+                <td>{{$guest->id}}</td>
+                <td>{{$guest->name}}</td>
+                <td>{{$guest->email}}</td>
+                <td>{{$guest->address}}</td>
+                <td>
+                    <div class="d-flex">
+                    <form action="admin/edit">
+                        <div class="form-group">
+                            <button type="" class="btn button action-btn text-center mr-2">Edit</button>
+                        </div>
+                    </form>
+                    <form action="/">
+                    <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-18-b text-blue" id="exampleModalCenteredLabel">Deletion confirmation</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-16-r text-grey">
+                                Are you sure you want to delete the guest?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn button button-white" data-dismiss="modal">No</button>
+                                <button type="submit" class="btn button bg-red del-btn">Yes</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn button action-btn text-center bg-red del-btn" data-toggle="modal" data-target="#exampleModalCentered">Delete</button>
+                        </div>
+                    </form>
+                    </div>
+
+                </td>
+            </tr>
+            @endforeach
+
             {{-- <?php
 
                 $result = mysqli_query($connection, "SELECT * FROM GUESTS");

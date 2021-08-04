@@ -14,8 +14,15 @@
                 <th class="table-3">Email</th>
                 <th class="table-4">Address</th>
             </tr>
+            @foreach($guests as $guest)
 
-            
+                <tr class="mb-2">
+                    <td>{{$guest->id}}</td>
+                    <td>{{$guest->name}}</td>
+                    <td>{{$guest->email}}</td>
+                    <td>{{$guest->address}}</td>
+                </tr>
+            @endforeach
             {{-- <?php 
                 $result = mysqli_query($connection, "SELECT * FROM GUESTS"); 
                 
