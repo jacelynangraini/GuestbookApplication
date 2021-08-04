@@ -31,5 +31,7 @@
                 });
                 });
     </script>
+
+    @yield('additional-js')
 </body>
 </html>

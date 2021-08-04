@@ -29,17 +29,17 @@
                         <button type="" class="btn button action-btn text-center mr-2">Edit</button>
                     </div>
                 </form>
-                <form action="/admin/delete/{{$guest->id}}" method="POST">
-                @csrf
-                {{-- <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+                <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-18-b text-blue" id="exampleModalCenteredLabel">Deletion confirmation</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
+                            <div class="modal-header">
+                                <h5 class="modal-title text-18-b text-blue" id="exampleModalCenteredLabel">Deletion confirmation</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <form method="POST" id="deleteForm">
+                        @csrf
                         <div class="modal-body text-16-r text-grey">
                             Are you sure you want to delete the guest?
                         </div>
@@ -47,13 +47,13 @@
                             <button type="button" class="btn button button-white" data-dismiss="modal">No</button>
                             <button type="submit" class="btn button bg-red del-btn">Yes</button>
                         </div>
+                        </form>
                         </div>
                     </div>
-                    </div> --}}
-                    <div class="form-group">
-                        <button type="submit" class="btn button action-btn text-center bg-red del-btn" data-toggle="modal" data-target="#exampleModalCentered">Delete</button>
                     </div>
-                </form>
+                    <div class="form-group">
+                        <button type="button" class="btn button action-btn text-center bg-red del-btn btn-del" data-toggle="modal" data-guestid="{{ $guest->id }}" data-target="#exampleModalCentered">Delete</button>
+                    </div>
                 </div>
 
                 </td>
@@ -117,4 +117,12 @@
     </div>
 
 </div>
+@endsection
+
+@section('additional-js')
+    <script>
+        $('.btn-del').click(function() {
+            $("#deleteForm").attr('action', '/admin/delete/'+$(this).data('guestid'));
+        });
+    </script>
 @endsection
