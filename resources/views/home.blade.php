@@ -12,7 +12,7 @@
                 <span class="h1 text-pink">Guest Book!</span>
                 <br>
                 <span class="text-18-m text-grey">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Please fill the form to submit your information!
                 </span>
             </div>
             <div class="w-40  h-75 mr-4 mt-auto mb-auto w-100-r mb-4-r mr-0-r">
@@ -22,15 +22,33 @@
                         @csrf
                             <div class="form-group">
                             <label for="formGroupExampleInput" class="text-pink">Name</label>
-                            <input type="text" class="form-control text-grey" id="formGroupExampleInput" placeholder="Enter your name" name="name">
+                            <input id="formGroupExampleInput" type="text" class="text-grey form-control @error('email') is-invalid @enderror" name="name" required autocomplete="email" placeholder="Enter your name">
+        
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput2" class="text-pink">Email</label>
-                            <input type="email" class="form-control text-grey" id="formGroupExampleInput2" placeholder="Enter your email" name="email">
+                            <input id="email" type="email" class="text-grey form-control @error('email') is-invalid @enderror" name="email" required autocomplete="email" placeholder="Enter your email">
+        
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput2" class="text-pink">Address</label>
-                            <input type="text" class="form-control text-grey" id="formGroupExampleInput2" placeholder="Enter your address" name="address">
+                            <input id="formGroupExampleInput2" type="text" class="text-grey form-control @error('email') is-invalid @enderror" name="address" required autocomplete="email" placeholder="Enter your address">
+        
+                            @error('address')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="form-group mb-0">
                             <button type="submit" class="btn button w-100">Submit</button>

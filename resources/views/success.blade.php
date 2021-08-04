@@ -8,9 +8,9 @@
         <div class="container d-flex justify-content-center align-items-center flex-column" >
             <img src="./assets/success.png" alt="" class="img-square">
             <br>
-            <span class="h2 text-blue mt-3 text-center">Thanks for blablabla</span>
+            <span class="h2 text-blue mt-3 text-center">Thank You!</span>
             <br>
-            <span class="text-16-r text-grey">Thanks tulis apa ya</span>
+            <span class="text-16-r text-grey">Thank you for attending the event! See you next time!</span>
         </div>
         </div>
 

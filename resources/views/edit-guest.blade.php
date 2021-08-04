@@ -4,7 +4,7 @@
 <div class="row vh-100">
     <div class="container-fluid w-100 d-flex align-items-center b flex-column">
 
-        <div class="w-75 text-center p3 h3 bg-img mt-7 text-pink shadow-cream" style="background-image: url(./assets/bg.png); border-radius: 50px;">
+        <div class="w-75 text-center p3 h3 bg-img mt-7 text-pink shadow-cream" style="background-image: url({{ asset('assets/bg.png') }}); border-radius: 50px;">
             Edit Guest
         </div>
         
