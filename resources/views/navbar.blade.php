@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-fixed-top">
-    <img src="./assets/logo.png" alt="" class="logo mr-2">
+    <img src={{ asset('assets/logo.png') }} alt="" class="logo mr-2">
     <a class="navbar-brand text-pink text-16-m" href="/">Guest Book</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

@@ -3,7 +3,7 @@
 <div class="row vh-100">
     <div class="container-fluid w-100 d-flex align-items-center flex-column">
 
-    <div class="w-75 text-center p3 h3 bg-img mt-7 text-pink shadow-cream" style="background-image: url(./assets/bg.png); border-radius: 50px;">
+    <div class="w-75 text-center p3 h3 bg-img mt-7 text-pink shadow-cream" style="background-image: url({{ asset('assets/bg.png') }}); border-radius: 50px;">
         View All Guests
     </div>
     <div class="mt-4 mb-7 w-75 bg-cream br-50 p4">
