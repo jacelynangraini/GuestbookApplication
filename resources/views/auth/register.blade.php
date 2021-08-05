@@ -21,10 +21,10 @@
                             <form class="d-flex flex-column justify-content-around" method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="username" class="text-pink">Username</label>
-                                    <input type="text" class="form-control text-grey @error('username') is-invalid @enderror" required id="username" placeholder="Enter your username" name="username">
+                                    <label for="name" class="text-pink">Username</label>
+                                    <input type="text" class="form-control text-grey @error('name') is-invalid @enderror" required id="name" placeholder="Enter your username" name="name">
         
-                                    @error('username')
+                                    @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
