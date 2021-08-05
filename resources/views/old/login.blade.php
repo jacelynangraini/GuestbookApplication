@@ -8,7 +8,8 @@
         <div class="container d-flex justify-content-around flex-column align-items-center" >
             <span class="h2 text-blue">Log In</span>
             <div class="form-container text-16-m ">
-                <form class="d-flex flex-column justify-content-around" action="/admin/view">
+                <form class="d-flex flex-column justify-content-around" action="/admin/view"method="POST" action="{{ route('login') }}">
+                        @csrf
                     <div class="form-group">
                         <label for="formGroupExampleInput2" class="text-pink">Email</label>
                         <input id="formGroupExampleInput" type="text" class="text-grey form-control @error('email') is-invalid @enderror" name="name" required autocomplete="email" placeholder="Enter your name">

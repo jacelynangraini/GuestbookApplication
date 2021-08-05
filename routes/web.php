@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PageController@home');
+Route::get('/', 'PageController@home')->name('index');
 Route::post('/success', 'GuestController@insert');
 
 Route::get('/view', 'GuestController@get');
