@@ -214,11 +214,11 @@ input#password:focus, input#password-confirm:focus{
 }
 
 input#address{
-    background-image: url("../assets/logo-password.png");
+    background-image: url("../assets/logo-address.png");
 }
 
 input#address:focus{
-    background-image: url("../assets/logo-password-pink.png");
+    background-image: url("../assets/logo-address-pink.png");
 }
 
 input#name, input#username{
