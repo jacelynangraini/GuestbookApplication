@@ -1,5 +1,5 @@
 @extends('layout.app')
-<title>Home | Guest Book<</title>
+<title>Home | Guest Book</title>
 @section('content')
 <div class="row p5">
     <div class="container-fluid h-100 d-flex align-items-center justify-content-center h-auto-r pr-0">

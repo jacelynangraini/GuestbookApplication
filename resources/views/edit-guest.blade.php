@@ -20,14 +20,14 @@
                         </div>
                         <div class="form-group">
                             <label for="email" class="text-pink">Email</label>
-                            <input type="email" class="form-control text-grey" id="email" placeholder="Enter your email" name="email" value={{$guests->email}}>
+                            <input type="email" class="form-control text-grey" id="email" placeholder="Enter your email" name="email" value="{{$guests->email}}">
                         </div>
                         <div class="form-group">
                             <label for="address" class="text-pink">Address</label>
-                            <input type="text" class="form-control text-grey" id="address" placeholder="Enter your address" name="address" value={{$guests->address}}>
+                            <input type="text" class="form-control text-grey" id="address" placeholder="Enter your address" name="address" value="{{$guests->address}}">
                         </div>
-                        <div class="form-group mb-0">
-                            <button type="submit" class="btn button w-100">Submit</button>
+                        <div class="form-group mb-0 mt-3">
+                            <button type="submit" class="btn button w-100">Update</button>
                         </div>
                     </form>    
                 </div>
