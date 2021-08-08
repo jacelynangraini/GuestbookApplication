@@ -16,8 +16,9 @@ html{
     letter-spacing: .025rem !important;
 }
 
+
 .vh-100{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* background-color */
@@ -397,24 +398,37 @@ input#email:focus, input#password:focus, input#name:focus, input#address:focus, 
 
 /* tables */
 .table-1{
-    min-width: 50px;
-    width: fit-content;
+    border: 2px solid black;
+    padding-right: 3rem !important;
+    max-width: 150px !important;
+    min-width: 100px;
+    width: 5vw !important;
+
+}
+
+.table-2{
+    min-width: 100px;
+    max-width: 250px;
+    width: 17.5vw !important;
     border: 2px solid black;
     padding-right: 3rem !important;
 }
 
-.table-2, .table-3{
-    min-width: 187px;
+.table-3{
+    min-width: 100px;
+    max-width: 350px;
     border: 2px solid black;
     padding-right: 3rem !important;
-    width: fit-content;
+    width: 30vw;
 }
+
 
 .table-4{
-    min-width: 250px;
-    border: 2px solid black;
+    max-width: 550px;
     padding-right: 3rem !important;
-    width: fit-content;
+    min-width: 100px !important;
+    width: 40vw !important;
+    
 }
 
 th{
@@ -425,6 +439,7 @@ th, td{
     padding: 1rem;
     border-right: 2px solid var(--grey-light);
     vertical-align: top;
+    word-wrap: anywhere;
 }
 
 table tr th:nth-child(4), table tr td:nth-child(4){
@@ -457,9 +472,10 @@ td{
     color: var(--grey) !important;
 }
 .table-admin tr th{
-    width: 150px !important;
-    max-width: 150px !important;
-    min-width: 150px !important;
+    /* width: 150px !important; */
+    /* max-width: 150px !important;
+    min-width: 100px !important;
+    width: 25%; */
 }
 
 .table-admin tr th:nth-child(5){
@@ -469,9 +485,9 @@ td{
 }
 
 .table-admin tr .table-1{
-    width: 60px !important;
-    max-width: 60px !important;
-    min-width: 60px !important;
+    /* width: 60px !important; */
+    /* max-width: 60px !important; */
+    /* min-width: 60px !important; */
 }
 /*  */
 
