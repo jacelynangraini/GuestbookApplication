@@ -2,7 +2,7 @@
 <title>Login | Guest Book</title>
 
 @section('content')
-<div class="row p5">
+<div class="row p5 vh-100">
     <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
 
         <div class="w-75 h-75 bg-img d-flex justify-content-between align-items-center shadow-cream h-50-r br-30-r"style="background-image: url({{ asset('assets/bg.png') }}); border-radius: 50px;">
