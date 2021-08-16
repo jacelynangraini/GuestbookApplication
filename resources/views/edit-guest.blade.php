@@ -3,7 +3,6 @@
 @section('content')
 <div class="row p5 vh-100">
     <div class="container-fluid w-100 d-flex align-items-center b flex-column">
-{{-- HELLO THIS IS A COMMAND --}}
         <div class="w-75 text-center p3 h3 bg-img text-pink shadow-cream br-50" style="background-image: url({{ asset('assets/bg.png') }});">
             Edit Guest
         </div>
