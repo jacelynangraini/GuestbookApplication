@@ -15,7 +15,7 @@ export COMPOSER_ALLOW_SUPERUSER=1
 composer install -d /var/www/html/
 
 # Copy configuration from /var/www/.env, see README.MD for more information
-aws --region=us-east-1 ssm get-parameter --name env --with-decryption --output text --query Parameter.Value > /var/www/html/GuestbookApplication/.env
+aws --region=us-east-1 ssm get-parameter --name env --with-decryption --output text --query Parameter.Value > /var/www/html/.env
 
 # Migrate all tables
 php /var/www/html/artisan migrate
