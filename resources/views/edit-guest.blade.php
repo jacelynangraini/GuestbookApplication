@@ -4,7 +4,7 @@
 <div class="row p5 vh-100">
     <div class="container-fluid w-100 d-flex align-items-center b flex-column">
         <div class="w-75 text-center p3 h3 bg-img text-pink shadow-cream br-50" style="background-image: url({{ asset('assets/bg.png') }});">
-            Edit Guest TEST
+            Edit Guest
         </div>
         
         <div class="w-75 bg-cream shadow-cream br-50 mt-3 p4">
