@@ -31,9 +31,8 @@ php /var/www/html/artisan optimize
 #php /var/www/html/artisan route:cache
 
 # Change rights
-chmod 777 -R /var/www/html/bootstrap/cache
-chmod 777 -R /var/www/html/storage
-chmod 777 -R /var/www/html/public/files/
+sudo chmod -R 777 storage/
+sudo chmod -R 777 bootstrap/
 
 # Bring up application
 php /var/www/html/artisan up
