@@ -13,11 +13,12 @@ yum install -y git
 # Remove current apache & php
 yum -y remove httpd* php*
 
-# Install PHP 7.1
-yum install -y php71 php71-cli php71-fpm php71-mysql php71-xml php71-curl php71-opcache php71-pdo php71-gd php71-pecl-apcu php71-mbstring php71-imap php71-pecl-redis php71-mcrypt php71-mysqlnd mod24_ssl
+# Install PHP
+sudo amazon-linux-extras enable php7.4
+sudo yum install php-cli php-xml php-json php-mbstring php-process php-common php-fpm php-zip php-mysqlnd git -y
 
 # Install Apache 2.4
-yum -y install httpd24
+sudo yum install httpd -y
 
 # Allow URL rewrites
 sed -i 's#AllowOverride None#AllowOverride All#' /etc/httpd/conf/httpd.conf
@@ -39,7 +40,7 @@ else
 fi
 
 # Restart apache
-service httpd start
+sudo systemctl restart httpd
 
 # Setup apache to start on boot
 chkconfig httpd on
