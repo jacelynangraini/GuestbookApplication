@@ -27,7 +27,8 @@ php /var/www/html/artisan view:clear
 
 # Optimize the application
 php /var/www/html/artisan config:cache
-php /var/www/html/artisan optimize
+# php /var/www/html/artisan optimize
+# php /var/www/html/artisan route:cache
 
 # Change rights
 sudo chmod -R 777 /var/www/html/storage/
