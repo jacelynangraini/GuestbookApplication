@@ -33,6 +33,7 @@ php /var/www/html/artisan config:cache
 # Change rights
 sudo chmod -R 777 /var/www/html/storage/
 sudo chmod -R 777 /var/www/html/bootstrap/
+sudo chmod 777 -R /var/www/html/public/files/
 
 # Bring up application
-php /var/www/html/artisan up
+# php /var/www/html/artisan up
