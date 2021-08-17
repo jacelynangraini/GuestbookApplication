@@ -28,11 +28,10 @@ php /var/www/html/artisan view:clear
 # Optimize the application
 php /var/www/html/artisan config:cache
 php /var/www/html/artisan optimize
-#php /var/www/html/artisan route:cache
 
 # Change rights
-sudo chmod -R 777 storage/
-sudo chmod -R 777 bootstrap/
+sudo chmod -R 777 /var/www/html/storage/
+sudo chmod -R 777 /var/www/html/bootstrap/
 
 # Bring up application
 php /var/www/html/artisan up
